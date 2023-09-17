@@ -1,5 +1,5 @@
 {
-    "name": "hgati/webp",
+    "name": "hgati/magento2-webp-convert",
     "description": "Hgati Webp",
     "minimum-stability": "stable",
     "authors": [
@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
+        "php": ">=8.2.8",
         "jcupitt/vips" : "~1.0.5"
     },
     "type": "magento2-module",
