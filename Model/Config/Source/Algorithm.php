@@ -36,9 +36,9 @@ class Algorithm implements OptionSourceInterface
     private function toArray(): array
     {
         return [
-            self::WEBP_ALGORITHM => __('Webp by php'),
-            self::CWEBP_ALGORITHM => __('Cwebp by command line'),
-            self::VIPS_ALGORITHM => __('Vips by command line'),
+            self::WEBP_ALGORITHM => __('Webp'),
+            self::CWEBP_ALGORITHM => __('Cwebp'),
+            self::VIPS_ALGORITHM => __('Vips'),
         ];
     }
 }
