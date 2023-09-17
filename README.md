@@ -54,7 +54,7 @@ Magento2 module for images conversion to webp format with save a product.
 3. Module
 
     ```shell  
-    composer require hgati/magento2-webp-convert:dev-master  
+    composer require hgati/magento2-webp-convert
     
     php bin/magento module:enable Hgati_Webp
     
