@@ -1,10 +1,10 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Greenrivers_Webp', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Hgati_Webp', __DIR__);

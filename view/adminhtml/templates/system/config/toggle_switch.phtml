@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-use Greenrivers\Webp\Block\Adminhtml\System\Config\ToggleSwitch;
+use Hgati\Webp\Block\Adminhtml\System\Config\ToggleSwitch;
 
 /** @var ToggleSwitch $block */
 $component = $block->getComponent();
@@ -27,7 +27,7 @@ $component = $block->getComponent();
         "Magento_Ui/js/core/app": {
         "components":{
           "<?= /* @noEscape */ $component['id'] ?>-scope":{
-            "component":"Greenrivers_Webp/js/system/config/<?= /* @noEscape */ $component['id'] ?>",
+            "component":"Hgati_Webp/js/system/config/<?= /* @noEscape */ $component['id'] ?>",
             "isChecked": <?= /* @noEscape */ json_encode($component['value']) ?>
           }
         }

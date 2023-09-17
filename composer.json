@@ -1,11 +1,11 @@
 {
-    "name": "greenrivers/webp",
-    "description": "Greenrivers Webp",
+    "name": "hgati/webp",
+    "description": "Hgati Webp",
     "minimum-stability": "stable",
     "authors": [
         {
-            "name": "Greenrivers team",
-            "email": "kontakt@greenrivers.pl"
+            "name": "Hgati team",
+            "email": "cobays@gmail.com"
         }
     ],
     "require": {
@@ -22,7 +22,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Greenrivers\\Webp\\": ""
+            "Hgati\\Webp\\": ""
         }
     }
 }

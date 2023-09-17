@@ -1,15 +1,15 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Cron;
+namespace Hgati\Webp\Cron;
 
 use Psr\Log\LoggerInterface;
-use Greenrivers\Webp\Helper\Config;
-use Greenrivers\Webp\Helper\Process;
+use Hgati\Webp\Helper\Config;
+use Hgati\Webp\Helper\Process;
 
 class Convert
 {

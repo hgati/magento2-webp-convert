@@ -1,7 +1,7 @@
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
 define([
@@ -14,7 +14,7 @@ define([
 
     return Component.extend({
         defaults: {
-            template: 'Greenrivers_Webp/system/config/slider_range',
+            template: 'Hgati_Webp/system/config/slider_range',
             sliderId: null,
             sliderHandleId: null,
             inputId: null,

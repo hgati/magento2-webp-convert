@@ -1,14 +1,14 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Plugin\Block\Product;
+namespace Hgati\Webp\Plugin\Block\Product;
 
 use Magento\Catalog\Block\Product\Image as Subject;
-use Greenrivers\Webp\Helper\Image as ImageHelper;
+use Hgati\Webp\Helper\Image as ImageHelper;
 
 class Image
 {

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="greenrivers_webp" frontName="greenrivers_webp">
-            <module name="Greenrivers_Webp"/>
+        <route id="hgati_webp" frontName="hgati_webp">
+            <module name="Hgati_Webp"/>
         </route>
     </router>
 </config>

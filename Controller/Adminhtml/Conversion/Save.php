@@ -1,17 +1,17 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Controller\Adminhtml\Conversion;
+namespace Hgati\Webp\Controller\Adminhtml\Conversion;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\App\Cache\TypeListInterface;
-use Greenrivers\Webp\Helper\Config;
-use Greenrivers\Webp\Helper\Cron;
+use Hgati\Webp\Helper\Config;
+use Hgati\Webp\Helper\Cron;
 
 class Save extends Action
 {

@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Helper;
+namespace Hgati\Webp\Helper;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\Framework\Exception\FileSystemException;
@@ -20,7 +20,7 @@ class Process
     const INCREMENT = 1000;
 
     const MEDIA_PATH = 'pub/media';
-    const WEBP_PATH = 'greenrivers/webp';
+    const WEBP_PATH = 'hgati/webp';
 
     /** @var Filesystem */
     private $filesystem;

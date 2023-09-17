@@ -1,14 +1,14 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Plugin\CustomerData;
+namespace Hgati\Webp\Plugin\CustomerData;
 
 use Magento\Checkout\CustomerData\AbstractItem as Subject;
-use Greenrivers\Webp\Helper\Image;
+use Hgati\Webp\Helper\Image;
 
 class AbstractItem
 {

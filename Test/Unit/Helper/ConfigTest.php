@@ -1,17 +1,17 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Test\Unit\Helper;
+namespace Hgati\Webp\Test\Unit\Helper;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
-use Greenrivers\Webp\Helper\Config;
-use Greenrivers\Webp\Test\Unit\Traits\TraitObjectManager;
+use Hgati\Webp\Helper\Config;
+use Hgati\Webp\Test\Unit\Traits\TraitObjectManager;
 
 class ConfigTest extends TestCase
 {

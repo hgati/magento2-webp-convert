@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Test\Unit\Helper;
+namespace Hgati\Webp\Test\Unit\Helper;
 
 use ArrayObject;
 use Magento\Framework\Filesystem;
@@ -16,11 +16,11 @@ use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
-use Greenrivers\Webp\Helper\Converter;
-use Greenrivers\Webp\Helper\Image;
-use Greenrivers\Webp\Helper\Process;
-use Greenrivers\Webp\Test\Unit\Traits\TraitObjectManager;
-use Greenrivers\Webp\Test\Unit\Traits\TraitReflectionClass;
+use Hgati\Webp\Helper\Converter;
+use Hgati\Webp\Helper\Image;
+use Hgati\Webp\Helper\Process;
+use Hgati\Webp\Test\Unit\Traits\TraitObjectManager;
+use Hgati\Webp\Test\Unit\Traits\TraitReflectionClass;
 
 class ProcessTest extends TestCase
 {
@@ -190,30 +190,30 @@ class ProcessTest extends TestCase
 
         $image1Mock->expects(self::once())
             ->method('getPathname')
-            ->willReturn('/var/www/magento2/pub/media/greenrivers/webp/catalog/product1.webp');
+            ->willReturn('/var/www/magento2/pub/media/hgati/webp/catalog/product1.webp');
         $image2Mock->expects(self::once())
             ->method('getPathname')
-            ->willReturn('/var/www/magento2/pub/media/greenrivers/webp/catalog/product2.webp');
+            ->willReturn('/var/www/magento2/pub/media/hgati/webp/catalog/product2.webp');
         $image3Mock->expects(self::once())
             ->method('getPathname')
-            ->willReturn('/var/www/magento2/pub/media/greenrivers/webp/catalog/product3.webp');
+            ->willReturn('/var/www/magento2/pub/media/hgati/webp/catalog/product3.webp');
         $finderMock->expects(self::once())
             ->method('getIterator')
             ->willReturn(new ArrayObject([$image1Mock, $image2Mock, $image3Mock]));
         $this->fileMock->expects(self::exactly(3))
             ->method('isExists')
             ->withConsecutive(
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product1.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product2.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product3.webp']
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product1.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product2.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product3.webp']
             )
             ->willReturn(true);
         $this->fileMock->expects(self::exactly(3))
             ->method('deleteFile')
             ->withConsecutive(
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product1.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product2.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product3.webp']
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product1.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product2.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product3.webp']
             )
             ->willReturn(true);
 
@@ -259,33 +259,33 @@ class ProcessTest extends TestCase
         $this->fileMock->expects(self::exactly(4))
             ->method('getParentDirectory')
             ->withConsecutive(
-                ['/var/www/magento2/pub/media/greenrivers/webp/captcha/captcha.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/wysiwyg/text.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/theme/invalid.webp']
+                ['/var/www/magento2/pub/media/hgati/webp/captcha/captcha.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/wysiwyg/text.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/theme/invalid.webp']
             )
             ->willReturnOnConsecutiveCalls(
-                '/var/www/magento2/pub/media/greenrivers/webp/captcha',
-                '/var/www/magento2/pub/media/greenrivers/webp/catalog',
-                '/var/www/magento2/pub/media/greenrivers/webp/wysiwyg',
-                '/var/www/magento2/pub/media/greenrivers/webp/theme'
+                '/var/www/magento2/pub/media/hgati/webp/captcha',
+                '/var/www/magento2/pub/media/hgati/webp/catalog',
+                '/var/www/magento2/pub/media/hgati/webp/wysiwyg',
+                '/var/www/magento2/pub/media/hgati/webp/theme'
             );
         $this->fileMock->expects(self::exactly(4))
             ->method('isExists')
             ->withConsecutive(
-                ['/var/www/magento2/pub/media/greenrivers/webp/captcha/captcha.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog/product.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/wysiwyg/text.webp'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/theme/invalid.webp']
+                ['/var/www/magento2/pub/media/hgati/webp/captcha/captcha.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog/product.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/wysiwyg/text.webp'],
+                ['/var/www/magento2/pub/media/hgati/webp/theme/invalid.webp']
             )
             ->willReturn(false);
         $this->fileMock->expects(self::exactly(4))
             ->method('createDirectory')
             ->withConsecutive(
-                ['/var/www/magento2/pub/media/greenrivers/webp/captcha'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/catalog'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/wysiwyg'],
-                ['/var/www/magento2/pub/media/greenrivers/webp/theme']
+                ['/var/www/magento2/pub/media/hgati/webp/captcha'],
+                ['/var/www/magento2/pub/media/hgati/webp/catalog'],
+                ['/var/www/magento2/pub/media/hgati/webp/wysiwyg'],
+                ['/var/www/magento2/pub/media/hgati/webp/theme']
             )
             ->willReturn(true);
         $this->converterMock->expects(self::exactly(4))
@@ -293,19 +293,19 @@ class ProcessTest extends TestCase
             ->withConsecutive(
                 [
                     '/var/www/magento2/pub/media/captcha/captcha.jpg',
-                    '/var/www/magento2/pub/media/greenrivers/webp/captcha/captcha.webp'
+                    '/var/www/magento2/pub/media/hgati/webp/captcha/captcha.webp'
                 ],
                 [
                     '/var/www/magento2/pub/media/catalog/product.jpeg',
-                    '/var/www/magento2/pub/media/greenrivers/webp/catalog/product.webp'
+                    '/var/www/magento2/pub/media/hgati/webp/catalog/product.webp'
                 ],
                 [
                     '/var/www/magento2/pub/media/wysiwyg/text.png',
-                    '/var/www/magento2/pub/media/greenrivers/webp/wysiwyg/text.webp'
+                    '/var/www/magento2/pub/media/hgati/webp/wysiwyg/text.webp'
                 ],
                 [
                     '/var/www/magento2/pub/media/theme/invalid.jpg',
-                    '/var/www/magento2/pub/media/greenrivers/webp/theme/invalid.webp'
+                    '/var/www/magento2/pub/media/hgati/webp/theme/invalid.webp'
                 ]
             )
             ->willReturn(true, true, true, false);

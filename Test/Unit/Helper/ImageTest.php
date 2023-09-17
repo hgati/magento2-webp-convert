@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Test\Unit\Helper;
+namespace Hgati\Webp\Test\Unit\Helper;
 
 use Magento\Framework\Filesystem;
 use Magento\Framework\Filesystem\Directory\ReadInterface;
@@ -13,10 +13,10 @@ use Magento\Framework\Filesystem\Driver\File;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\Log\LoggerInterface;
-use Greenrivers\Webp\Helper\Config;
-use Greenrivers\Webp\Helper\Image;
-use Greenrivers\Webp\Test\Unit\Traits\TraitObjectManager;
-use Greenrivers\Webp\Test\Unit\Traits\TraitReflectionClass;
+use Hgati\Webp\Helper\Config;
+use Hgati\Webp\Helper\Image;
+use Hgati\Webp\Test\Unit\Traits\TraitObjectManager;
+use Hgati\Webp\Test\Unit\Traits\TraitReflectionClass;
 
 class ImageTest extends TestCase
 {
@@ -68,7 +68,7 @@ class ImageTest extends TestCase
      */
     public function testChangePath()
     {
-        $webpDirPath = '/var/www/magento2/pub/media/greenrivers/webp/catalog/product/image.webp';
+        $webpDirPath = '/var/www/magento2/pub/media/hgati/webp/catalog/product/image.webp';
 
         $readMock = $this->getMockBuilder(ReadInterface::class)
             ->disableOriginalConstructor()

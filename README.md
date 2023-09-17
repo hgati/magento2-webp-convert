@@ -1,4 +1,4 @@
-# Greenrivers Webp
+# Hgati Webp
 
 Magento2 module for images conversion to webp format.
 
@@ -52,9 +52,9 @@ Magento2 module for images conversion to webp format.
 3. Module
 
     ```shell  
-    composer require greenrivers/webp  
+    composer require hgati/webp  
     
-    php bin/magento module:enable Greenrivers_Webp
+    php bin/magento module:enable Hgati_Webp
     
     php bin/magento setup:upgrade
     

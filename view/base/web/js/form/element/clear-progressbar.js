@@ -1,7 +1,7 @@
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
 define([
@@ -16,7 +16,7 @@ define([
 
     return AbstractElement.extend({
         defaults: {
-            template: 'Greenrivers_Webp/form/element/progressbar',
+            template: 'Hgati_Webp/form/element/progressbar',
             value: ko.observable(0),
             isDone: ko.observable(true)
         },
@@ -34,7 +34,7 @@ define([
             let removedImages = 0;
 
             $.post(
-                location.origin + '/admin/greenrivers_webp/webp/images',
+                location.origin + '/admin/hgati_webp/webp/images',
                 {
                     form_key: window.FORM_KEY
                 }
@@ -47,7 +47,7 @@ define([
 
             function process() {
                 $.post(
-                    location.origin + '/admin/greenrivers_webp/webp/clear',
+                    location.origin + '/admin/hgati_webp/webp/clear',
                     {
                         form_key: window.FORM_KEY
                     }

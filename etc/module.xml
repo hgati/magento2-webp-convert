@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Greenrivers_Webp">
+    <module name="Hgati_Webp">
         <sequence>
             <module name="Magento_Catalog"/>
             <module name="Magento_Checkout"/>

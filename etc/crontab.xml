@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 <!--
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
-    <group id="greenrivers">
-        <job instance="Greenrivers\Webp\Cron\Convert" method="execute" name="greenrivers_webp_convert">
-            <config_path>crontab/greenrivers/jobs/greenrivers_webp_convert/schedule/cron_expr</config_path>
+    <group id="hgati">
+        <job instance="Hgati\Webp\Cron\Convert" method="execute" name="hgati_webp_convert">
+            <config_path>crontab/hgati/jobs/hgati_webp_convert/schedule/cron_expr</config_path>
         </job>
     </group>
 </config>

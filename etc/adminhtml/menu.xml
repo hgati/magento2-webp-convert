@@ -1,27 +1,27 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Greenrivers_Webp::webp"
-             title="Greenrivers Webp"
+        <add id="Hgati_Webp::webp"
+             title="Hgati Webp"
              module="Magento_Backend"
              sortOrder="30"
              parent="Magento_Backend::content"
-             resource="Greenrivers_Webp::webp"/>
+             resource="Hgati_Webp::webp"/>
 
-        <add id="Greenrivers_Webp::convert"
+        <add id="Hgati_Webp::convert"
              title="Conversion"
-             module="Greenrivers_Webp"
+             module="Hgati_Webp"
              sortOrder="10"
-             parent="Greenrivers_Webp::webp"
-             action="greenrivers_webp/conversion"
-             resource="Greenrivers_Webp::convert"/>
+             parent="Hgati_Webp::webp"
+             action="hgati_webp/conversion"
+             resource="Hgati_Webp::convert"/>
     </menu>
 </config>

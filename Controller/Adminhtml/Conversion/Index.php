@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Controller\Adminhtml\Conversion;
+namespace Hgati\Webp\Controller\Adminhtml\Conversion;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
@@ -13,7 +13,7 @@ use Magento\Framework\View\Result\PageFactory;
 
 class Index extends Action
 {
-    const ADMIN_RESOURCE = 'Greenrivers_Webp::convert';
+    const ADMIN_RESOURCE = 'Hgati_Webp::convert';
 
     /** @var PageFactory */
     private $pageFactory;
@@ -36,7 +36,7 @@ class Index extends Action
     public function execute()
     {
         $page = $this->pageFactory->create();
-        $page->getConfig()->getTitle()->prepend(__('Greenrivers Webp'));
+        $page->getConfig()->getTitle()->prepend(__('Hgati Webp'));
 
         return $page;
     }

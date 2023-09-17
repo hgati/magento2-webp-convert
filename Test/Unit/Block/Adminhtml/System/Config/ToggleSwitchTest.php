@@ -1,19 +1,19 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Test\Unit\Block\Adminhtml\System\Config;
+namespace Hgati\Webp\Test\Unit\Block\Adminhtml\System\Config;
 
 use Magento\Framework\Data\Form\Element\AbstractElement;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\MockObject\MockObject;
-use Greenrivers\Webp\Block\Adminhtml\System\Config\ToggleSwitch;
-use Greenrivers\Webp\Helper\Config;
-use Greenrivers\Webp\Test\Unit\Traits\TraitObjectManager;
-use Greenrivers\Webp\Test\Unit\Traits\TraitReflectionClass;
+use Hgati\Webp\Block\Adminhtml\System\Config\ToggleSwitch;
+use Hgati\Webp\Helper\Config;
+use Hgati\Webp\Test\Unit\Traits\TraitObjectManager;
+use Hgati\Webp\Test\Unit\Traits\TraitReflectionClass;
 
 class ToggleSwitchTest extends TestCase
 {

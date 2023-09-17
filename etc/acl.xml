@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12,14 +12,14 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Backend::content">
-                    <resource id="Greenrivers_Webp::webp" title="Greenrivers Webp">
-                        <resource id="Greenrivers_Webp::convert" title="Greenrivers Webp Conversion"/>
+                    <resource id="Hgati_Webp::webp" title="Hgati Webp">
+                        <resource id="Hgati_Webp::convert" title="Hgati Webp Conversion"/>
                     </resource>
                 </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Greenrivers_Webp::config" title="Greenrivers Webp Config"/>
+                            <resource id="Hgati_Webp::config" title="Hgati Webp Config"/>
                         </resource>
                     </resource>
                 </resource>

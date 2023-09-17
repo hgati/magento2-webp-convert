@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Block\Adminhtml\Conversion;
+namespace Hgati\Webp\Block\Adminhtml\Conversion;
 
 use Magento\Backend\Block\Widget\Button;
 use Magento\Framework\Exception\NoSuchEntityException;

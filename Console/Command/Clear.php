@@ -1,17 +1,17 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Console\Command;
+namespace Hgati\Webp\Console\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Greenrivers\Webp\Helper\Process;
+use Hgati\Webp\Helper\Process;
 
 class Clear extends Command
 {
@@ -35,7 +35,7 @@ class Clear extends Command
      */
     protected function configure()
     {
-        $this->setName('greenrivers:webp:clear');
+        $this->setName('hgati:webp:clear');
         $this->setDescription('Remove all webp images');
 
         parent::configure();

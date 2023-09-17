@@ -1,7 +1,7 @@
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 define([
     'jquery',
@@ -12,7 +12,7 @@ define([
     'use strict';
 
     let treeInstance;
-    const url = `${location.origin}/admin/greenrivers_webp/conversion/treenode`;
+    const url = `${location.origin}/admin/hgati_webp/conversion/treenode`;
     const index = location.pathname.includes('cron') ? 'cron_folders' : 'conversion_folders';
 
     $("#folder-tree").folderTree({

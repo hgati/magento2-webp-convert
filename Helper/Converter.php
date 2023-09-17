@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Helper;
+namespace Hgati\Webp\Helper;
 
 use Exception;
 use Jcupitt\Vips\Exception as VipsException;
@@ -13,7 +13,7 @@ use Jcupitt\Vips\Image;
 use Magento\Framework\Filesystem\Io\File;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Process\Process;
-use Greenrivers\Webp\Model\Config\Source\Algorithm;
+use Hgati\Webp\Model\Config\Source\Algorithm;
 
 class Converter
 {

@@ -1,21 +1,21 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Block\Adminhtml\Conversion;
+namespace Hgati\Webp\Block\Adminhtml\Conversion;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
-use Greenrivers\Webp\Helper\Config;
-use Greenrivers\Webp\Utils\Form\Element\Time as TimeElement;
+use Hgati\Webp\Helper\Config;
+use Hgati\Webp\Utils\Form\Element\Time as TimeElement;
 
 class Time extends Template
 {
     /** @var string */
-    protected $_template = 'Greenrivers_Webp::conversion/time.phtml';
+    protected $_template = 'Hgati_Webp::conversion/time.phtml';
 
     /** @var TimeElement */
     private $timeElement;

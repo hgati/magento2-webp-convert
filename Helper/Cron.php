@@ -1,11 +1,11 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Helper;
+namespace Hgati\Webp\Helper;
 
 use Exception;
 use Magento\Cron\Model\Config\Source\Frequency;
@@ -14,8 +14,8 @@ use Psr\Log\LoggerInterface;
 
 class Cron
 {
-    const CRON_STRING_PATH = 'crontab/greenrivers/jobs/greenrivers_webp_convert/schedule/cron_expr';
-    const CRON_MODEL_PATH = 'crontab/greenrivers/jobs/greenrivers_webp_convert/run/model';
+    const CRON_STRING_PATH = 'crontab/hgati/jobs/hgati_webp_convert/schedule/cron_expr';
+    const CRON_MODEL_PATH = 'crontab/hgati/jobs/hgati_webp_convert/run/model';
 
     /** @var ConfigValueFactory */
     private $configValueFactory;

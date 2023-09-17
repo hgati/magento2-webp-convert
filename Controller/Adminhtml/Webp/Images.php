@@ -1,16 +1,16 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Controller\Adminhtml\Webp;
+namespace Hgati\Webp\Controller\Adminhtml\Webp;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\Controller\Result\JsonFactory;
-use Greenrivers\Webp\Helper\Process;
+use Hgati\Webp\Helper\Process;
 
 class Images extends Action
 {

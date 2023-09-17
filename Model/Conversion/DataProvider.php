@@ -1,18 +1,18 @@
 <?php
 /**
- * @author Greenrivers Team
- * @copyright Copyright (c) 2021 Greenrivers
- * @package Greenrivers_Webp
+ * @author Hgati Team
+ * @copyright Copyright (c) 2021 Hgati
+ * @package Hgati_Webp
  */
 
-namespace Greenrivers\Webp\Model\Conversion;
+namespace Hgati\Webp\Model\Conversion;
 
 use Magento\Framework\Api\FilterBuilder;
 use Magento\Framework\Api\Search\ReportingInterface;
 use Magento\Framework\Api\Search\SearchCriteriaBuilder;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider as BaseDataProvider;
-use Greenrivers\Webp\Helper\Config;
+use Hgati\Webp\Helper\Config;
 
 class DataProvider extends BaseDataProvider
 {
