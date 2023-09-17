@@ -20,7 +20,7 @@ class ConvertNowButton extends GenericButton implements ButtonProviderInterface
 
         return [
             'label' => __('Convert now'),
-            'on_click' => "setLocation('${url}')",
+            'on_click' => "setLocation('{$url}')",
             'class' => '',
             'sort_order' => 10,
         ];
