@@ -2,7 +2,7 @@
 /**
  * @author Greenrivers Team
  * @copyright Copyright (c) 2021 Hgati
- * @package Greenrivers_Webp
+ * @package Hgati_Webp
  */
 
 namespace Hgati\Webp\Block\Adminhtml\Conversion\Buttons;
