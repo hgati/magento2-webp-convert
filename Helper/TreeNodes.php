@@ -16,7 +16,7 @@ class TreeNodes
 {
     const ROOT_ID = 'root';
     const HASH_ID = '#';
-    const GREENRIVERS_DIR = 'hgati';
+    const HGATI_DIR = 'hgati';
 
     /** @var DirectoryList */
     private $directoryList;
@@ -56,7 +56,7 @@ class TreeNodes
             $paths = $this->driverFile->readDirectory($path);
             foreach ($paths as $path) {
                 $dirName = substr(strrchr($path, DIRECTORY_SEPARATOR), 1);
-                if ($this->driverFile->isDirectory($path) && $dirName !== self::GREENRIVERS_DIR) {
+                if ($this->driverFile->isDirectory($path) && $dirName !== self::HGATI_DIR) {
                     $dirId = substr($path, strpos($path, DirectoryList::MEDIA . DIRECTORY_SEPARATOR) + 6);
 
                     $directories[] = [
