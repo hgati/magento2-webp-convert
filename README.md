@@ -70,9 +70,7 @@ Magento2 module for images conversion to webp format.
 
 ## Usage
 
-#### **Content > Hgati Webp > Conversion**
-
-#### **Stores > Configuration > HGATI > Webp**
+#### **Stores > Configuration > CATALOG > Webp**
 
 * **General->Enabled** - module activation
 * **Settings->Algorithm** - choose one from three method types 
