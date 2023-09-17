@@ -4,7 +4,7 @@ Magento2 module for images conversion to webp format.
 
 ## Requirements
 
-* PHP >= **7.1**
+* PHP >= **8.2**
 * Cwebp >= **0.5.2**
 * libvips >= **8.4.5**
 * Magento >= **2.3**
@@ -27,7 +27,7 @@ Magento2 module for images conversion to webp format.
    sudo apt-get install phpX-gd
    ```
    
-   Where x is PHP version (i. e. 7.1).
+   Where x is PHP version (i. e. 8.2).
    
    Next configure PHP to enable support for webp format.
    
