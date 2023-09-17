@@ -34,7 +34,7 @@ define([
             let removedImages = 0;
 
             $.post(
-                location.origin + '/admin/hgati_webp/webp/images',
+                location.origin + '/' + treeNodeAdminPath + '/hgati_webp/webp/images',
                 {
                     form_key: window.FORM_KEY
                 }
@@ -47,7 +47,7 @@ define([
 
             function process() {
                 $.post(
-                    location.origin + '/admin/hgati_webp/webp/clear',
+                    location.origin + '/' + treeNodeAdminPath + '/hgati_webp/webp/clear',
                     {
                         form_key: window.FORM_KEY
                     }
