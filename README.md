@@ -1,6 +1,6 @@
 # Hgati Webp (supported PHP 8.2)
 
-Magento2 module for images conversion to webp format.
+Magento2 module for images conversion to webp format with save a product.
 
 
 ## Requirements
