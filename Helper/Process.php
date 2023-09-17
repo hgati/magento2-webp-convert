@@ -76,7 +76,7 @@ class Process
      * @param array $folders
      * @return Finder
      */
-    public function getImages(array $extensions = ['*.webp'], array $folders = []): Finder
+    public function getImages(array $extensions = ['*.ngx.webp'], array $folders = []): Finder
     {
         $mediaPath = $this->filesystem->getDirectoryRead(DirectoryList::MEDIA)->getAbsolutePath();
 
