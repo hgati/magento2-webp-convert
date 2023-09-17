@@ -12,7 +12,7 @@ define([
     'use strict';
 
     let treeInstance;
-    const url = `${location.origin}/admin/hgati_webp/conversion/treenode`;
+    const url = `${location.origin}/${treeNodeAdminPath}/hgati_webp/conversion/treenode`;
     const index = location.pathname.includes('cron') ? 'cron_folders' : 'conversion_folders';
 
     $("#folder-tree").folderTree({

@@ -16,6 +16,13 @@ use Hgati\Webp\Block\Adminhtml\Conversion\Tree;
     </div>
 </div>
 
+<script>
+<?php $objectManager = \Magento\Framework\App\ObjectManager::getInstance();?>
+<?php $areaList = $objectManager->get("\Magento\Framework\App\AreaList");?>
+<?php $adminPath = $areaList->getFrontName('adminhtml');?>
+const treeNodeAdminPath = "<?php echo $adminPath;?>";
+</script>
+
 <script type="text/x-magento-init">
     {
         "*": {
