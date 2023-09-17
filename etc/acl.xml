@@ -11,11 +11,6 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Magento_Backend::content">
-                    <resource id="Hgati_Webp::webp" title="Hgati Webp">
-                        <resource id="Hgati_Webp::convert" title="Hgati Webp Conversion"/>
-                    </resource>
-                </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
