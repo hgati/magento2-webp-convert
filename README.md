@@ -84,7 +84,7 @@ Update changes by click on **Save** button.
 All images assigned to product should be converted with **.ngx.webp** file extension in same directory.
 
 - It is more effective when used in conjunction with Nginx.
-https://vincent.bernat.ch/en/blog/2021-webp-avif-nginx
+    - https://vincent.bernat.ch/en/blog/2021-webp-avif-nginx
 - Configuring AWS CloudFront CDN to cache webp files is advisable.
-https://www.friism.com/webp-content-negotiation-cloudfront/
+    - https://www.friism.com/webp-content-negotiation-cloudfront/
 
