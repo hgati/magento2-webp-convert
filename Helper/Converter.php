@@ -99,7 +99,7 @@ class Converter
         $quality = $this->config->getQualityConfig();
 
         try {
-            $process = Process::fromShellCommandline("cwebp ${imagePath} -m 0 -q ${quality} -o ${webpPath}");
+            $process = Process::fromShellCommandline("cwebp {$imagePath} -m 0 -q {$quality} -o {$webpPath}");
             $process->run();
 
             return $process->isSuccessful();

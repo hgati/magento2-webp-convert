@@ -83,7 +83,7 @@ class Convert extends Command
         $errorImages = $convertData['error_images'];
 
         $progressBar->finish();
-        $output->writeln("\n<info>Converted images: ${convertedImages}</info>");
-        $output->writeln("\n<error>Error images: ${errorImages}</error>");
+        $output->writeln("\n<info>Converted images: {$convertedImages}</info>");
+        $output->writeln("\n<error>Error images: {$errorImages}</error>");
     }
 }

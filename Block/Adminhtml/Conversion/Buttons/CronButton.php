@@ -1,8 +1,8 @@
 <?php
 /**
- * @author Hgati Team
+ * @author Greenrivers Team
  * @copyright Copyright (c) 2021 Hgati
- * @package Hgati_Webp
+ * @package Greenrivers_Webp
  */
 
 namespace Hgati\Webp\Block\Adminhtml\Conversion\Buttons;

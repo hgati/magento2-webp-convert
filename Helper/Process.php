@@ -187,7 +187,7 @@ class Process
                         $errorImages[] = $imagePath;
                         $this->setErrorImages($errorImages);
 
-                        $this->logger->error("Invalid image with path: ${imagePath}");
+                        $this->logger->error("Invalid image with path: {$imagePath}");
                     }
                 }
 

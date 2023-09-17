@@ -53,6 +53,6 @@ class Clear extends Command
         $removedImages = $this->process->clear($images, true, $progressBar);
 
         $progressBar->finish();
-        $output->writeln("\n<info>Removed images: ${removedImages}</info>");
+        $output->writeln("\n<info>Removed images: {$removedImages}</info>");
     }
 }

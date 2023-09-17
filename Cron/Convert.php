@@ -46,14 +46,14 @@ class Convert
             $countImages = $images->count();
             $countImagesToConversion = count($imagesToConversion);
 
-            $this->logger->info("Cron total images: ${countImages}");
-            $this->logger->info("Cron images to conversion: ${countImagesToConversion}");
+            $this->logger->info("Cron total images: {$countImages}");
+            $this->logger->info("Cron images to conversion: {$countImagesToConversion}");
 
             $convertData = $this->process->convert($imagesToConversion, true);
             $convertedImages = $convertData['converted_images'];
             $errorImages = $convertData['error_images'];
 
-            $this->logger->info("Cron converted images: ${convertedImages}, errors images: ${errorImages}");
+            $this->logger->info("Cron converted images: {$convertedImages}, errors images: {$errorImages}");
         }
     }
 }
