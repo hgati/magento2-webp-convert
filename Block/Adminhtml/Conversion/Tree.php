@@ -26,7 +26,7 @@ class Tree extends Template
                 'add_convert_button',
                 Button::class,
                 [
-                    'label' => __('Convert now'),
+                    'label' => __('Convert Now'),
                     'onclick' => "addNew('" . $addUrl . "', false)",
                     'class' => 'add',
                     'id' => 'add_subcategory_button',
