@@ -207,27 +207,8 @@ class Process
      */
     public function doConvert(string $imagePath): bool
     {
-        // $webpImage = substr_replace(
-        //     $imagePath,
-        //     'webp',
-        //     strrpos($imagePath, '.') + 1
-        // );
-        $webpImage = "$imagePath.ngx.webp";
-        // $webpPath = str_replace(
-        //     self::MEDIA_PATH,
-        //     self::MEDIA_PATH . DIRECTORY_SEPARATOR . self::WEBP_PATH,
-        //     $webpImage
-        // );
-        $webpPath = $webpImage;
-        // $webpDir = $this->file->getParentDirectory($webpPath);
-        // try {
-        //     if (!$this->file->isExists($webpPath)) {
-        //         $this->file->createDirectory($webpDir);
-        //     }
-        // } catch (FileSystemException $e) {
-        //     $this->logger->error($e->getMessage());
-        // }
-
+        $webpPath = "$imagePath.ngx.webp";
+        if ($this->file->isExists($webpPath)) return false;
         return $this->converter->convert($imagePath, $webpPath);
     }
 
