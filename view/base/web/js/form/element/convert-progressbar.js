@@ -38,7 +38,7 @@ define([
             let errorImages = 0;
 
             $.post(
-                location.origin + '/admin/hgati_webp/webp/images',
+                location.origin + '/' + treeNodeAdminPath + '/hgati_webp/webp/images',
                 {
                     form_key: window.FORM_KEY,
                     extensions: extensions.value(),
@@ -54,7 +54,7 @@ define([
 
             function process() {
                 $.post(
-                    location.origin + '/admin/hgati_webp/webp/convert',
+                    location.origin + '/' + treeNodeAdminPath + '/hgati_webp/webp/convert',
                     {
                         form_key: window.FORM_KEY,
                         extensions: extensions.value(),
