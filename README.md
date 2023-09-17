@@ -8,8 +8,7 @@ Magento2 module for images conversion to webp format.
 * PHP >= **8.2**
 * Cwebp >= **0.5.2**
 * libvips >= **8.4.5**
-* Magento >= **2.3**
-* Memory limit >= **8GB**
+* Magento >= **2.4**
 
 ## Installation
 
