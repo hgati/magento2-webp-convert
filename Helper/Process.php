@@ -207,8 +207,11 @@ class Process
      */
     public function doConvert(string $imagePath): bool
     {
+        if (!$this->file->isExists($imagePath)) return false;
+
         $webpPath = "$imagePath.ngx.webp";
         if ($this->file->isExists($webpPath)) return false;
+        
         return $this->converter->convert($imagePath, $webpPath);
     }
 
