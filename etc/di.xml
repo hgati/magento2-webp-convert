@@ -38,9 +38,4 @@
             <argument name="logger" xsi:type="object">Hgati\Webp\Logger</argument>
         </arguments>
     </type>
-
-    <type name="Magento\Framework\Filter\DirectiveProcessor\LegacyDirective">
-        <plugin name="Hgati_Webp::Filter_LegacyDirective"
-                type="Hgati\Webp\Plugin\Filter\DirectiveProcessor\LegacyDirective"/>
-    </type>
 </config>
