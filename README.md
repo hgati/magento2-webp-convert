@@ -45,10 +45,6 @@ Magento2 module for images conversion to webp format.
     
     Add `extension=vips.so` to **php.ini** file.
 
-    ```shell
-    composer require jcupitt/vips 
-    ```
-
 3. Module
 
     ```shell  
