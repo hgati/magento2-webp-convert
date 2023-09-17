@@ -5,10 +5,10 @@ Magento2 module for images conversion to webp format with save a product.
 
 ## Requirements
 
-* PHP >= **8.2**
+* PHP >= **8.2.8**
 * Cwebp >= **0.5.2**
 * libvips >= **8.4.5**
-* Magento >= **2.4**
+* Magento >= **2.4.6**
 
 ## Installation
 
@@ -38,12 +38,18 @@ Magento2 module for images conversion to webp format with save a product.
 2. Vips extension
 
     ```shell script
+    echo "Installing vips library"
     sudo apt-get install libvips-dev
     
-    pecl install vips
-    ```
+    echo "Installing vips pecl extension"
+    $PHP_VER=8.2
+    printf "\n" | sudo pecl install vips
     
-    Add `extension=vips.so` to **php.ini** file.
+    [ -d /etc/php/$PHP_VER/mods-available ] && echo 'extension=vips.so' | sudo tee /etc/php/$PHP_VER/mods-available/vips.ini
+    [ -d /etc/php/$PHP_VER/mods-available ] && sudo ln -sf /etc/php/$PHP_VER/mods-available/vips.ini /etc/php/$PHP_VER/fpm/conf.d/20-vips.ini
+    [ -d /etc/php/$PHP_VER/mods-available ] && sudo ln -sf /etc/php/$PHP_VER/mods-available/vips.ini /etc/php/$PHP_VER/cli/conf.d/20-vips.ini
+    # OR Add `extension=vips.so` to **php.ini** file.
+    ```
 
 3. Module
 
