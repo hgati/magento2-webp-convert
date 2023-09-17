@@ -2,6 +2,7 @@
 
 Magento2 module for images conversion to webp format.
 
+
 ## Requirements
 
 * PHP >= **8.2**
