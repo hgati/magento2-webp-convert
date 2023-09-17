@@ -20,7 +20,7 @@ class CronButton extends GenericButton implements ButtonProviderInterface
 
         return [
             'label' => __('Cron'),
-            'on_click' => "setLocation('${url}')",
+            'on_click' => "setLocation('{$url}')",
             'class' => '',
             'sort_order' => 20,
         ];
