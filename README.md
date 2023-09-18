@@ -4,6 +4,14 @@
 - It's better to create a bash script with a scheduled job using the cwebp executable to convert to webp every day, rather than doing it this way.
 
 ```bash
+# Cleanning .webp
+$ /usr/local/bin/webpgen clean
+
+# Generating .webp in specified directories
+$ /usr/local/bin/webpgen
+```
+
+```bash
 #!/usr/bin/env bash
 # AWS CloudFront CDN Conditional WebP Caching, https://www.friism.com/webp-content-negotiation-cloudfront/
 # WebP,AVIF + NGINX = https://vincent.bernat.ch/en/blog/2021-webp-avif-nginx
