@@ -3,6 +3,63 @@
 - Magento2 module for images conversion to webp format with save a product.
 - It's better to create a bash script with a scheduled job using the cwebp executable to convert to webp every day, rather than doing it this way.
 
+```bash
+#!/usr/bin/env bash
+# AWS CloudFront CDN Conditional WebP Caching, https://www.friism.com/webp-content-negotiation-cloudfront/
+# WebP,AVIF + NGINX = https://vincent.bernat.ch/en/blog/2021-webp-avif-nginx
+
+BASEDIR=/var/www/magento
+###################################################################
+# Convert all images to WebP format (if not exists .webp in same directory)
+declare -A TARGET_DIRS
+TARGET_DIRS[0]=$BASEDIR/pub/media/catalog/category
+TARGET_DIRS[1]=$BASEDIR/pub/media/catalog/product
+TARGET_DIRS[2]=$BASEDIR/pub/media/logo
+TARGET_DIRS[3]=$BASEDIR/pub/media/magefan_blog
+TARGET_DIRS[4]=$BASEDIR/pub/media/wysiwyg
+TARGET_DIRS[5]=$BASEDIR/pub/media/resized
+TARGET_DIRS[6]=$BASEDIR/pub/media/blog/cache
+
+# Cleanning all generated .webp images
+if [ "$1" = "clean" ]; then
+	for TARGET_DIR in ${TARGET_DIRS[@]}; do
+		echo "Deleting *.ngx.WebP | ${TARGET_DIR} ..."
+		find $TARGET_DIR -type f -iname '*.webp' | while read filepath
+		do
+			CURR_DIR=$(dirname $filepath)
+			SRC_FILE=$(basename $filepath .webp)
+			[ -f "$CURR_DIR/$SRC_FILE" ] && echo $filepath && rm $filepath
+		done
+	done
+else
+	for TARGET_DIR in ${TARGET_DIRS[@]}; do
+		echo "Converting JPG,PNG,GIF to .ngx.WebP | ${TARGET_DIR} ..."
+
+		# JPG to WebP > Optimize JPG
+		find $TARGET_DIR -type f -regex ".*\.\(jpe?g\)$" | while read filepath
+		do 
+			[ ! -f "$filepath.webp" ] && cwebp -q 65 -af $filepath -o $filepath.webp -quiet \
+				&& jpegoptim --max=80 --all-progressive --strip-all --quiet $filepath
+		done
+
+		# PNG to WebP > Optimize PNG
+		find $TARGET_DIR -type f -regex ".*\.\(png\)$" | while read filepath
+		do 
+			[ ! -f "$filepath.webp" ] && cwebp -q 65 -af $filepath -o $filepath.webp -quiet \
+				&& pngquant --skip-if-larger --strip --ext .png --force -- $filepath
+		done
+		
+		# GIF to WebP
+		find $TARGET_DIR -type f -regex ".*\.\(gif\)$" | while read filepath
+		do 
+			[ ! -f "$filepath.webp" ] && gif2webp -q 65 $filepath -o $filepath.webp -quiet
+		done
+	done
+fi
+
+echo "------- THE END ------------------------------------------------"
+```
+
 ## Requirements
 
 * PHP >= **8.2.8**
