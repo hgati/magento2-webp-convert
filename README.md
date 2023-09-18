@@ -2,6 +2,7 @@
 
 - Magento2 module for images conversion to webp format with save a product.
 - Deleted all the unnecessary things from the bug-ridden original source code. (it sucks)
+- It's better to create a bash script with a scheduled job using the cwebp executable to convert to webp every day, rather than doing it this way.
 
 ## Requirements
 
