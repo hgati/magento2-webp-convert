@@ -7,6 +7,8 @@
 #!/usr/bin/env bash
 # AWS CloudFront CDN Conditional WebP Caching, https://www.friism.com/webp-content-negotiation-cloudfront/
 # WebP,AVIF + NGINX = https://vincent.bernat.ch/en/blog/2021-webp-avif-nginx
+# First of all, Install required executable below:
+# sudo apt -y install cwebp jpegoptim gif2webp pngquant
 
 BASEDIR=/var/www/magento
 ###################################################################
@@ -23,7 +25,7 @@ TARGET_DIRS[6]=$BASEDIR/pub/media/blog/cache
 # Cleanning all generated .webp images
 if [ "$1" = "clean" ]; then
 	for TARGET_DIR in ${TARGET_DIRS[@]}; do
-		echo "Deleting *.ngx.WebP | ${TARGET_DIR} ..."
+		echo "Deleting *.webp | ${TARGET_DIR} ..."
 		find $TARGET_DIR -type f -iname '*.webp' | while read filepath
 		do
 			CURR_DIR=$(dirname $filepath)
@@ -33,7 +35,7 @@ if [ "$1" = "clean" ]; then
 	done
 else
 	for TARGET_DIR in ${TARGET_DIRS[@]}; do
-		echo "Converting JPG,PNG,GIF to .ngx.WebP | ${TARGET_DIR} ..."
+		echo "Converting JPG,PNG,GIF to .webp | ${TARGET_DIR} ..."
 
 		# JPG to WebP > Optimize JPG
 		find $TARGET_DIR -type f -regex ".*\.\(jpe?g\)$" | while read filepath
